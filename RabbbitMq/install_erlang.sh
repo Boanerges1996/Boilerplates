@@ -5,7 +5,7 @@
 # middleware for Erlang. This guide will show you how you can 
 # install and use the latest release of  Erlang/OTP on Ubuntu 22.04|20.04|18.04 LTS.
 sudo apt update
-sudo apt install software-properties-common apt-transport-https
+sudo apt install software-properties-common apt-transport-https -y
 wget -O- https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc | sudo apt-key add -
 
 # add the repository to your Ubuntu 22.04|20.04|18.04 system by running the following commands:

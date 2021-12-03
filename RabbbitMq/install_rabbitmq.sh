@@ -3,7 +3,7 @@ curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/sc
 
 sudo apt update
 
-sudo apt install rabbitmq-server
+sudo apt install rabbitmq-server -y
 
 systemctl status  rabbitmq-server.service
 
