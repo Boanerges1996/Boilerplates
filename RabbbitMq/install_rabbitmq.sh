@@ -1,3 +1,4 @@
+#!/bin/sh
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.deb.sh | sudo bash
 
 sudo apt update
