@@ -1,3 +1,4 @@
+#!/bin/sh
 # Erlang programming language was built for concurrency, 
 # fault tolerance, and distributed application architectures. 
 # OTP (Open Telecom Platform) is a collection of libraries and 

@@ -3,18 +3,25 @@
 ## Ubuntu 20.04
 - First Install Erlang, since RabbitMQ depends on Erlang
 - Then now install rabbitMQ
+```bash
+wget https://github.com/Boanerges1996/Boilerplates/blob/main/RabbbitMq/install_erlang.sh
+wget https://github.com/Boanerges1996/Boilerplates/blob/main/RabbbitMq/install_rabbitmq.sh
+bash install_erlang.sh
+bash install_rabbitmq.sh
+```
 
-<br>
-<br>
+
+<br/>
+<br/>
 
 ## Enable the RabbitMQ Management Dashboard (Optional)
 ```
 sudo rabbitmq-plugins enable rabbitmq_management
 ```
-<br>
-<br>
+<br/>
+<br/>
 
-### **NOTE:** RabbitMQ Management Dashboard runs by default on PORT <b>15672<b>
+### **NOTE:** RabbitMQ Management Dashboard runs by default on PORT <b>15672</b>
 <br>
 
 - ## If running from local machine then RabbitMQ Management Dashboard will be access via
@@ -51,39 +58,39 @@ sudo rabbitmq-plugins enable rabbitmq_management
 <br>
 
 # RabbitMQ User Management Commands
-- Delete User:
+- **Delete User:**
 ```
 rabbitmqctl delete_user <user_name>
 ```
-- Change User Password:
+- **Change User Password:**
 ```
 rabbitmqctl change_password <user_name> <StrongPassword>
 ```
-- Create new Virtualhost:
+- **Create new Virtualhost:**
 ```
 rabbitmqctl add_vhost /<vhost_name>
 ```
-- List available Virtualhosts:
+- **List available Virtualhosts:**
 ```
 rabbitmqctl list_vhosts
 ```
-- Delete a virtualhost:
+- **Delete a virtualhost:**
 ```
 rabbitmqctl delete_vhost /<vhost_name>
 ```
-- Grant user permissions for vhost:
+- **Grant user permissions for vhost:**
 ```
 rabbitmqctl set_permissions -p /<vhost_name> <user_name> ".*" ".*" ".*"
 ```
-- List vhost permissions:
+- **List vhost permissions:**
 ```
 rabbitmqctl list_permissions -p /<vhost_name>
 ```
-- To list user permissions:
+- **To list user permissions:**
 ```
 rabbitmqctl list_user_permissions <user_name>
 ```
-- Delete user permissions:
+- **Delete user permissions:**
 ```
 rabbitmqctl clear_permissions -p /<vhost_name> <user_name>
 ```
